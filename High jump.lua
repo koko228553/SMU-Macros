@@ -11,10 +11,8 @@ end
 function onExecute()
     local delay = settings.delay_ms or 0
 
-    -- Press C immediately
     pressKey("C")
 
-    -- Wait the configured delay
     if delay > 0 then
         sleep(delay)
     end
